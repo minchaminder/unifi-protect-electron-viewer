@@ -1,0 +1,9 @@
+# Ignore build artifacts
+dist/
+node_modules/
+
+# Ignore executables
+*.exe
+
+# Ignore logs
+*.log
