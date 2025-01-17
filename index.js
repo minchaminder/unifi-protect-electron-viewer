@@ -9,7 +9,7 @@ const CONFIG_FILE = path.join(app.getPath('userData'), 'config.json');
 const DEFAULT_CONFIG = {
     protectUrl: 'https://10.0.1.58/protect/dashboard/all',
     displayIndex: 2,
-    isConfigured: false
+    isConfigured: true
 };
 
 // Function to load config
