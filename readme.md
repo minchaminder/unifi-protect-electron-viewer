@@ -26,7 +26,6 @@ A dedicated Electron-based viewer application for UniFi Protect that launches yo
 ### Technical Features
 - SSL certificate verification bypass
 - Custom User-Agent string
-- Bearer token authentication support
 - Multi-monitor support
 - Windows taskbar icon fix
 
@@ -41,7 +40,7 @@ A dedicated Electron-based viewer application for UniFi Protect that launches yo
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/unifi-protect-viewer.git
+git clone https://github.com/minchaminder/unifi-protect-electron-viewer.git
 cd unifi-protect-viewer
 ```
 
