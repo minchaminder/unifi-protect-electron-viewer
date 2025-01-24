@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder"
+    "build": "electron-builder",
+    "build-patch": "npm version patch && npm run build",
+    "build-minor": "npm version minor && npm run build",
+    "build-major": "npm version major && npm run build"
   },
   "build": {
     "appId": "com.yourcompany.unifiapp",
