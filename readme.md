@@ -61,6 +61,43 @@ To create a production build:
 npm run build
 ```
 
+### Incrementing Version Numbers Automatically
+
+To increment the version number automatically:
+
+#### Patch Version Increment
+To increment the patch version (e.g., 1.0.0 to 1.0.1):
+```bash
+npm version patch
+```
+
+#### Minor Version Increment
+To increment the minor version (e.g., 1.0.0 to 1.1.0):
+```bash
+npm version minor
+```
+
+#### Major Version Increment
+To increment the major version (e.g., 1.0.0 to 2.0.0):
+```bash
+npm version major
+```
+
+### Notes on Versioning
+- Ensure your Git working directory is clean before running the versioning commands.
+- After the version is updated, npm will automatically commit the changes and create a Git tag.
+
+### Example Workflow
+```bash
+git add .
+git commit -m "Preparing for version update"
+npm version patch # or minor/major
+npm run build
+git push --follow-tags
+```
+
+
+
 ## Technical Details
 
 ### Full-Screen Hack
