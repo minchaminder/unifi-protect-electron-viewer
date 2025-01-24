@@ -196,8 +196,10 @@ function createMainWindow(config) {
     });
 
     globalShortcut.register('Escape', () => {
-        win.webContents.executeJavaScript('window.exitFullScreen()', true)
-            .catch(err => console.error('Error exiting fullscreen:', err));
+        if (win.isFocused()) {
+            win.webContents.executeJavaScript('window.exitFullScreen()', true)
+                .catch(err => console.error('Error exiting fullscreen:', err));
+        }
     });
 
     win.webContents.on('did-finish-load', () => {
