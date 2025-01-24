@@ -7,3 +7,6 @@ node_modules/
 
 # Ignore logs
 *.log
+/.idea/GitLink.xml
+/.idea/dataSources.xml
+/misc.xml
